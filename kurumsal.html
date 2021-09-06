@@ -1,0 +1,498 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Kalam&family=Merienda&family=Piazzolla:ital,wght@0,400;1,300&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap">
+<title>Gülnar - Kurumsal</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.aa{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+    /* Style the footer */
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    .topnav a.active {
+    background-color: #395781;
+    color: white;
+  }
+  .bolum {
+      background-color:white;
+      color: rgb(25, 3, 51);
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+
+        body {
+          background-color: #e7e8ec;
+          font-family: Arial, Helvetica, sans-serif;
+         
+        }
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }
+        
+        /* Container around content */
+        .container {
+          padding: 10px 40px;
+          position: relative;
+          background-color: inherit;
+          width: 50%;
+        }
+        
+        /* The circles on the timeline */
+        .container::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid #395781;
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        
+        /* Place the container to the left */
+        .left {
+          left: 0;
+        }
+        
+        /* Place the container to the right */
+        .right {
+          left: 50%;
+        }
+        
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+        
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+        
+        /* Fix the circle for containers on the right side */
+        .right::after {
+          left: -16px;
+        }
+        
+        /* The actual content */
+        .content {
+          padding: 20px 30px;
+          background-color: white;
+          position: relative;
+          border-radius: 6px;
+        }
+        
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+          /* Place the timelime to the left */
+          .timeline::after {
+          left: 31px;
+          }
+          
+          /* Full-width containers */
+          .container {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+          }
+          
+          /* Make sure that all arrows are pointing leftwards */
+          .container::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+          }
+        
+          /* Make sure all circles are at the same spot */
+          .left::after, .right::after {
+          left: 15px;
+          }
+          
+          /* Make all right containers behave like the left ones */
+          .right {
+          left: 0%;
+          }
+        }
+    </style>    
+</head>
+<body>
+<div class="header">
+<img src="img/logo.png" class="aa"><br><br>
+</div>
+<div class="topnav">
+  <a href="index.html">ANASAYFA</a>
+  <a href="hizmetlerimiz.html">HİZMETLERİMİZ</a>
+  <a class="active" href="kurumsal.html">KURUMSAL</a>
+   <a href="kariyer.html">KARİYER</a>
+    <a href="iletisim.html">İLETİŞİM</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #395781;
+  color: white;
+}
+
+.fa {font-size:50px;}
+</style>
+</head>
+<body>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Ortaklarımız</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projelerimiz</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Müşterilerimiz</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Görüşmelerimiz</p>
+    </div>
+  </div>
+</div>
+
+
+    <h2>Tarihçemiz</h2>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>40 Yıllık Deneyim</h2>
+             
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>2020</h2>
+              <p>Ambalaj ve Plastik Sanayi Ticaret A.Ş. ile Ortaklığımız</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>2010</h2>
+              <p>Yatırım Bankası ile Ortaklığımız</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>1991</h2>
+              <p>Alternatif Bank ile Anlaşmamız</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>1990</h2>
+              <p>Holdingimizin kuruluşu</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>1980</h2>
+              <p>Otomotiv Ticareti Başlangıcı</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <section class="accordion-item">
+              <h1>Misyonumuz</h1>
+              <div class="accordion-item-content">
+                <p>Nihai kullanıcıya hitap eden ürün ve hizmetlerde en çağdaş ticari ve teknolojik uygulamaları izlemek, geliştirmek ve gerçekleştirmek;<br>
+                  Türkiye ve bölgemizde bu çalışmaların etkin olarak yürütülmesi için gerekli kurumsal imkân ve kabiliyetleri hayata geçirmek.Nihai kullanıcıya hitap eden ürün ve hizmetlerde en çağdaş ticari ve teknolojik uygulamaları izlemek, geliştirmek ve gerçekleştirmek;<br>
+                  Türkiye ve bölgemizde bu çalışmaların etkin olarak yürütülmesi için gerekli kurumsal imkân ve kabiliyetleri hayata geçirmek.</p>
+              </div>
+          </section>
+          <section class="accordion-item">
+              <h1>Vizyonumuz</h1>
+              <div class="accordion-item-content">
+                <p>Toplumsal yaşamda saydamlık, ekonomik yaşamda bireyin refah ve istikrarına etkin olarak katkı yapacak hizmetler, ticaret ve endüstri platformlarında verimli ve sürdürülebilir yatırımların gerçekleştirilmesi.Toplumsal yaşamda saydamlık, ekonomik yaşamda bireyin refah ve istikrarına etkin olarak katkı yapacak hizmetler, ticaret ve endüstri platformlarında verimli ve sürdürülebilir yatırımların gerçekleştirilmesi.</p>
+              </div>
+         
+      
+      <style>
+      .accordion:hover .accordion-item:hover .accordion-item-content,
+      .accordion .accordion-item--default .accordion-item-content {
+          height: 6em;
+      }
+      
+      .accordion-item-content,
+      .accordion:hover .accordion-item-content {
+          height: 0;
+          overflow: hidden;
+          transition: height .25s;
+      }
+      
+      /* Aesthetic */
+      body 
+      .accordion {
+          padding: 0;
+          margin: 0 auto;
+          width: 100%;
+          font-family: "PT Sans" sans-serif
+      }
+      
+      .accordion .accordion-item {
+        background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+        border-bottom: 1px solid #666;
+        padding: 1em;
+        color: #395781;
+      }
+      
+      .accordion h1 {
+        margin: 0;
+      }
+      
+      .accordion .accordion-item:nth-child(1) {
+        background-color: #395781
+        background-image: linear-gradient(-90deg, hsl(200, 80%, 60%), hsl(200, 80%, 45%) 2em, hsl(200, 80%, 60%));
+      
+      }
+      
+      .accordion .accordion-item:nth-child(2) {
+        background-color: #395781
+        background-image: #395781;
+      }
+      
+      </style>
+
+        
+
+    
+  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <body>
+<style>
+  <div>
+    { margin-right:0; ;height:2000px;}
+    
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+     
+    }
+    
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+    
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .instagram {
+      background: #dd1a65;
+      color: white;
+    }
+    
+    .linkedin {
+      background: #007bb5;
+      color: white;
+    }
+   
+
+    </div>
+    </style>
+  </body>
+    <body>
+    
+    <div class="icon-bar">
+      <a href="https://tr-tr.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="https://twitter.com/login?lang=tr" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="https://www.instagram.com/?hl=tr" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+      <a href="https://tr.linkedin.com/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    
+    </div>
+    
+
+
+
+    <div class="footer">
+      <hr> <p>copyright &copy; ödev amaçlı hazırlanmış bir web sitesidir.</p>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+</head>
+<body>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+
+</body>
+      
+    </div>
+    </body>
+    </html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
